@@ -20,6 +20,7 @@ docker run -it --rm --name n8n --network ollama-network -p 5678:5678 -v n8n_data
 https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 
 docker run -it --rm \
+ --gpus=all \
  --name n8n \
  -p 5678:5678 \
  -e GENERIC_TIMEZONE="Asia/Calcutta" \
