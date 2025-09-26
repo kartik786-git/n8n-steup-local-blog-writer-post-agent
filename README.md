@@ -1,4 +1,4 @@
-# n8n-steup-local-blog-writer-post-agent
+# How to setup n8n on locally with docker(gpu) & ollama. 
 
 ## Pull ollama image from docker.
 <img width="2523" height="864" alt="image" src="https://github.com/user-attachments/assets/07189f7d-7822-40f1-bf95-f72cbf24d08e" />
