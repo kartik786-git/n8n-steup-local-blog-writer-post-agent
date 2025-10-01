@@ -19,16 +19,16 @@ docker run -it --rm --name n8n --network ollama-network -p 5678:5678 -v n8n_data
 ## create n8n container with network additionally required time zone. you can get time zone from here. 
 https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 
-docker run -it --rm \\
- --gpus=all \\
- --name n8n \\
- -p 5678:5678 \\
- -e GENERIC_TIMEZONE="Asia/Calcutta" \\
- -e TZ="Asia/Calcutta" \\
- -e N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true \\
- -e N8N_RUNNERS_ENABLED=true \\
- -v n8n_data:/home/node/.n8n \\
- --network ollama-network \\
+docker run -it --rm 
+ --gpus=all 
+ --name n8n 
+ -p 5678:5678 
+ -e GENERIC_TIMEZONE="Asia/Calcutta" 
+ -e TZ="Asia/Calcutta" 
+ -e N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true 
+ -e N8N_RUNNERS_ENABLED=true 
+ -v n8n_data:/home/node/.n8n 
+ --network ollama-network 
  docker.n8n.io/n8nio/n8n
 
 <img width="2540" height="1385" alt="image" src="https://github.com/user-attachments/assets/a9ad47ae-0ab2-485f-802c-63cdb6c1b14b" />
